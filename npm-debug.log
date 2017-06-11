@@ -1,0 +1,64 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\drink\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\drink\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-jhipster' ]
+2 info using npm@2.7.1
+3 info using node@v0.10.33
+4 verbose node symlink D:\drink\nodejs\\node.exe
+5 silly cache add args [ 'generator-jhipster', null ]
+6 verbose cache add spec generator-jhipster
+7 silly cache add parsed spec { raw: 'generator-jhipster',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'generator-jhipster',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed generator-jhipster@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'generator-jhipster', range: '*', hasData: false }
+12 silly mapToRegistry name generator-jhipster
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/generator-jhipster
+16 verbose addNameRange registry:https://registry.npmjs.org/generator-jhipster not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/generator-jhipster
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 16:28:06
+20 verbose request id 71847cdd41cb2853
+21 http request GET https://registry.npmjs.org/generator-jhipster
+22 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=5424:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:openssl\ssl\s23_clnt.c:795:
+23 info attempt registry request try #2 at 16:28:16
+24 http request GET https://registry.npmjs.org/generator-jhipster
+25 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=5424:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:openssl\ssl\s23_clnt.c:795:
+26 info attempt registry request try #3 at 16:29:16
+27 http request GET https://registry.npmjs.org/generator-jhipster
+28 verbose stack Error: tunneling socket could not be established, cause=5424:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:openssl\ssl\s23_clnt.c:795:
+28 verbose stack
+28 verbose stack     at ClientRequest.onError (D:\drink\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:168:17)
+28 verbose stack     at ClientRequest.g (events.js:180:16)
+28 verbose stack     at ClientRequest.emit (events.js:95:17)
+28 verbose stack     at CleartextStream.socketErrorListener (http.js:1551:9)
+28 verbose stack     at CleartextStream.emit (events.js:95:17)
+28 verbose stack     at SecurePair.<anonymous> (tls.js:1410:15)
+28 verbose stack     at SecurePair.emit (events.js:95:17)
+28 verbose stack     at SecurePair.error (tls.js:1017:27)
+28 verbose stack     at CleartextStream.read [as _read] (tls.js:462:17)
+28 verbose stack     at CleartextStream.Readable.read (_stream_readable.js:340:10)
+29 verbose cwd D:\drink\nodejs
+30 error Windows_NT 6.1.7601
+31 error argv "D:\\drink\\nodejs\\\\node.exe" "D:\\drink\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "generator-jhipster"
+32 error node v0.10.33
+33 error npm  v2.7.1
+34 error code ECONNRESET
+35 error network tunneling socket could not be established, cause=5424:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:openssl\ssl\s23_clnt.c:795:
+35 error network
+35 error network This is most likely not a problem with npm itself
+35 error network and is related to network connectivity.
+35 error network In most cases you are behind a proxy or have bad network settings.
+35 error network
+35 error network If you are behind a proxy, please make sure that the
+35 error network 'proxy' config is set properly.  See: 'npm help config'
+36 verbose exit [ 1, true ]
